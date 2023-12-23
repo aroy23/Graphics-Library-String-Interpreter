@@ -1,4 +1,4 @@
-An implementation of a graphics plotting function 
+An implementation of a graphics plotting function with a built in string interpreter for command inputs
 
 **The parameters for the function are:**
  
