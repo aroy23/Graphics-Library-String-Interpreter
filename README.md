@@ -7,7 +7,8 @@ An implementation of a graphics plotting function with a built in string interpr
   - a reference parameter that specifies the character with which lines will be plotted with on the grid
 
   - a reference parameter indicating wheter the current line being plotted should be plotted in the foreground or background
-    - The value 0 indicates that the line should be plotted in the foreground: At every position in the line, the plot character replaces whatever character is in the grid at that point. The value 1 indicates the line is to be plotted in the background: At every position in the line, if the character in the grid at that point is a space character (' '), then the plot character replaces it; otherwise, the character at that position is left unchanged.
+    - The value 0 indicates that the line should be plotted in the foreground: At every position in the line, the plot character replaces whatever character is in the grid at that point.
+    - The value 1 indicates the line is to be plotted in the background: At every position in the line, if the character in the grid at that point is a space character (' '), then the plot character replaces it; otherwise, the character at that position is left unchanged.
 
   - a reference parameter which is set to the first index in the command string of an invalid plotting command if applicable
 
