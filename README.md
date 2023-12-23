@@ -23,7 +23,58 @@ int performCommands(string commandString, char& plotChar, int& mode, int& badPos
 
   - Returns 3 if plotting is attempted outside specified grid boundaries
 
+**Sample Main Function**
+
+    int main()
+    {
+        setSize(30, 30);
+        char pc = '*';
+        int m = FG;
+        int bad = 0;
+        assert(performCommands("b h3v2f*v3h4v-3b h5f*h-3v3h3b h2v-3f*v3h3b h2f*v-3h3v3v-1h-2", pc, m, bad) == 0 && bad == 0);
+        draw();
+    }
+
+Output:
+
+                111111111122222222223
+       123456789012345678901234567890
+      +------------------------------+
+     1|                              |
+     2|                              |
+     3|   *   * **** *    ****       |
+     4|   *   * *    *    *  *       |
+     5|   *   * *    *    ****       |
+     6|   ***** **** **** *  *       |
+     7|                              |
+     8|                              |
+     9|                              |
+    10|                              |
+    11|                              |
+    12|                              |
+    13|                              |
+    14|                              |
+    15|                              |
+    16|                              |
+    17|                              |
+    18|                              |
+    19|                              |
+    20|                              |
+    21|                              |
+    22|                              |
+    23|                              |
+    24|                              |
+    25|                              |
+    26|                              |
+    27|                              |
+    28|                              |
+    29|                              |
+    30|                              |
+      +------------------------------+
+
 **Plotting Command Syntax**
+
+Plotting starts at (1,1) in the specified grid
 
 **Horizontal Line command**
 - This command consists of an upper or lower case H immediately followed by an argument in one of the following forms:
