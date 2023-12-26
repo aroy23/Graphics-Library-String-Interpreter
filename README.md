@@ -21,7 +21,7 @@ int performCommands(string commandString, char& plotChar, int& mode, int& badPos
 
   - Returns 1 if command string is syntactically invalid
 
-  - Returns 2 if plotting mode is not foreground or background mode (o or 1)
+  - Returns 2 if plotting mode is not foreground or background mode (0 or 1)
 
   - Returns 3 if plotting is attempted outside specified grid boundaries
 
